@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>YadaCoin Analytics</title>
+    <link rel="icon" type="image/png" href="/yadacoinstatic/yadalogo192.png">
+    <link rel="stylesheet" href="/httpanalyticsstatic/style.css?t=__ASSET__">
+</head>
+<body data-asset-v="__ASSET__">
+    <header class="top">
+        <a class="brand" href="/analytics">
+            <img src="/yadacoinstatic/yadalogo192.png" alt="">
+            <span>
+                <strong>YadaCoin</strong>
+                <em>Analytics</em>
+            </span>
+        </a>
+        <button class="menu-btn" type="button" onclick="document.getElementById('nav').classList.toggle('open')">Menu</button>
+        <nav id="nav">
+            <a href="#" data-section="overview" class="active">Overview</a>
+            <a href="#" data-section="paths">Paths</a>
+            <a href="#" data-section="visitors">Visitors</a>
+            <a href="#" data-section="live">Live</a>
+            <a href="/pool">Pool</a>
+            <a href="/explorer">Explorer</a>
+            <select id="range" aria-label="Range">
+                <option value="1h">1 hour</option>
+                <option value="24h" selected>24 hours</option>
+                <option value="7d">7 days</option>
+                <option value="30d">30 days</option>
+                <option value="90d">90 days</option>
+            </select>
+            <span class="live" id="live">offline</span>
+        </nav>
+    </header>
+    <main>
+        <div id="content">Loading...</div>
+    </main>
+    <script src="/httpanalyticsstatic/js/app.js?t=__ASSET__"></script>
+</body>
+</html>
